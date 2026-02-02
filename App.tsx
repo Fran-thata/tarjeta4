@@ -7,19 +7,14 @@ export default function App() {
     <div className="relative min-h-[100dvh] w-full font-sans text-white bg-black selection:bg-orange-500/40 overflow-x-hidden">
       {/* Background Layer */}
       <div className="fixed inset-0 z-0">
-        {/* Background Image - Brick wall + Warm Barber Shop Lights aesthetic */}
+        {/* Background Image - Barber Shop Salon Interior */}
         <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat blur-[2px] scale-105"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat blur-[2px] scale-105 grayscale brightness-50 contrast-125"
           style={{ 
             backgroundImage: `url('https://images.unsplash.com/photo-1585747860715-2ba37e788b70?q=80&w=2074&auto=format&fit=crop')`, 
           }}
         />
-        
-        {/* Dark Overlay - Uniform dimming for text contrast, but lighter to see background */}
-        <div className="absolute inset-0 bg-black/50" />
-        
-        {/* Gradient - Only dark at the bottom, transparent at the top to remove the black header effect */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent" />
+        {/* Overlays removed as requested */}
       </div>
 
       {/* Main Content */}
